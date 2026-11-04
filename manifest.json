@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "WebTime",
+  "version": "0.1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  }
+}
