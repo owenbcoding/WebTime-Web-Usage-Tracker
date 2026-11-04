@@ -1,4 +1,4 @@
-# WebTime — Website Usage Tracker
+# WebTime — Web Usage Tracker
 
 A lightweight, privacy-focused Google Chrome extension that tracks how much time you spend on different websites. Built with HTML, CSS, vanilla JavaScript, Vite, and the Chrome Extensions API, WebTime aims to help users understand their browsing habits and manage their time more effectively.
 
