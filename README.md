@@ -150,12 +150,18 @@ corepack enable
 pnpm install
 ```
 
-The `packageManager` field pins pnpm to the project-supported version. Corepack will use that version automatically; enable Corepack once per Node.js installation if `pnpm` is not already available.
+The `packageManager` field pins pnpm to the project-supported version. Corepack will use that version automatically. If enabling Corepack fails because you do not have permission to write its global shims, install the pinned pnpm version in your user directory instead:
+
+```bash
+npm install --global --prefix "$HOME/.local" pnpm@12.15.0
+```
+
+Make sure `$HOME/.local/bin` is on your `PATH`.
 
 ### 3. Start the Development Environment
 
 ```bash
-pnpm dev
+pnpm run dev
 ```
 
 The Vite development server is useful for developing the frontend. However, Chrome extension APIs and the background service worker must be tested within an extension-compatible build or development setup.
@@ -163,12 +169,18 @@ The Vite development server is useful for developing the frontend. However, Chro
 ### 4. Build the Extension
 
 ```bash
-pnpm build
+pnpm run build
 ```
 
 Vite's build configuration must include the extension's HTML entry points, Manifest V3 manifest, and background service worker. If an extension integration plugin is configured, such as CRXJS, it can help manage this process.
 
-### 5. Load the Extension in Chrome
+### 5. Preview the Production Build
+
+```bash
+pnpm run preview
+```
+
+### 6. Load the Extension in Chrome
 
 Once the extension build has been generated:
 
