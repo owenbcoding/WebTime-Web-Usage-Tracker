@@ -1,6 +1,14 @@
 const TOTAL_KEY = "webtime:total";
 const SESSION_KEY = "webtime:session";
 
+await saveTotals({
+  "2026-10-28": {
+    "youtube.com": 125000,
+    "github.com": 84000,
+  },
+});
+
+
 export async function getTotals() {
   return (await chrome.storage.local.get(TOTALS_KEY))[TOTALS_KEY] ?? {};
 }
