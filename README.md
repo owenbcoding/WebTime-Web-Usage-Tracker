@@ -5,7 +5,7 @@ A lightweight, privacy-focused Google Chrome extension that tracks how much time
 <p align="center">
    <img
     src="https://imgur.com/619B5Ck.png"
-    alt="Owencodes - Software Engineer"
+    alt="WebTime-usage-tracker image"
     style="max-width: 100%; height: auto;"
   />
 </p>
