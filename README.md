@@ -158,6 +158,8 @@ npm install --global --prefix "$HOME/.local" pnpm@12.15.0
 
 Make sure `$HOME/.local/bin` is on your `PATH`.
 
+In VS Code, open a **new integrated terminal** in the project after installing pnpm. The project terminal settings add `$HOME/.local/bin` to the terminal's `PATH` automatically.
+
 ### 3. Start the Development Environment
 
 ```bash
